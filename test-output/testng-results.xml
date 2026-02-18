@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-18T21:50:31 EET" name="Default suite" finished-at="2026-02-18T21:50:32 EET" duration-ms="866">
+    <groups>
+    </groups>
+    <test started-at="2026-02-18T21:50:31 EET" name="Default test" finished-at="2026-02-18T21:50:32 EET" duration-ms="866">
+      <class name="MyTestCase.TestData">
+        <test-method is-config="true" signature="MyBeforeTest()[pri:0, instance:MyTestCase.TestData@1d470d0]" started-at="2026-02-18T21:50:31 EET" name="MyBeforeTest" finished-at="2026-02-18T21:50:32 EET" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyBeforeTest -->
+        <test-method signature="ReadData()[pri:2, instance:MyTestCase.TestData@1d470d0]" started-at="2026-02-18T21:50:32 EET" name="ReadData" finished-at="2026-02-18T21:50:32 EET" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadData -->
+      </class> <!-- MyTestCase.TestData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
