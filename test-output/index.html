@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1823198860\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-912821068\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="MyTestCase.TestData" class="method navigator-link" hash-for-method="ReadData">ReadData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="MyTestCase.TestData" class="method navigator-link" hash-for-method="myTestToDeleteData">myTestToDeleteData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="MyTestCase.TestData" class="method navigator-link" hash-for-method="myTestToupdateData">myTestToupdateData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,12 +141,26 @@
                   <span class="method-name">ReadData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myTestToDeleteData">
+                  </a> <!-- myTestToDeleteData -->
+                  <span class="method-name">myTestToDeleteData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myTestToupdateData">
+                  </a> <!-- myTestToupdateData -->
+                  <span class="method-name">myTestToupdateData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1823198860\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-912821068\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,16 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ReadData')
 data.setCell(0, 2, 'MyTestCase.TestData')
-data.setCell(0, 3, 100);
+data.setCell(0, 3, 79);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'myTestToDeleteData')
+data.setCell(1, 2, 'MyTestCase.TestData')
+data.setCell(1, 3, 19);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'myTestToupdateData')
+data.setCell(2, 2, 'MyTestCase.TestData')
+data.setCell(2, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 100 ms</span>
+              <span class="suite-total-time">Total running time: 104 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -209,12 +241,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">MyTestCase.TestData</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">SignupWithDataBase</span>
+                <br/>
                 <span class="ignored-method-name">MtTestToAddData</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -234,7 +268,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ReadData</span>
-                <span class="method-start">749 ms</span>
+                <span class="method-start">2664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">myTestToupdateData</span>
+                <span class="method-start">2755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">myTestToDeleteData</span>
+                <span class="method-start">2764 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
