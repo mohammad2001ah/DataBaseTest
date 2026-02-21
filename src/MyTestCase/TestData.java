@@ -125,7 +125,7 @@ public class TestData {
 		
 		stmt = con.createStatement();
 		
-		String query = "delete from customers WHERE customerNumber = 9991";
+		String query = "delete customers WHERE customerNumber = 9991";
 		
 		stmt.executeUpdate(query);
 	}
