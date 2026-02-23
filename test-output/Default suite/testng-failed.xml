@@ -6,7 +6,7 @@
       <class name="MyTestCase.TestData">
         <methods>
           <include name="MyBeforeTest"/>
-          <include name="myTestToDeleteData"/>
+          <include name="MtTestToAddData"/>
         </methods>
       </class> <!-- MyTestCase.TestData -->
     </classes>

@@ -38,23 +38,28 @@ public class TestData {
 	@BeforeTest
 	public void MyBeforeTest() throws SQLException {
 		driver.get(MyWebSite);
-
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "2001");
-
 	}
 
-	@Test(priority = 1, enabled = false)
+//	@Test(priority = 1, enabled = false)
+//	public void MtTestToAddData() throws SQLException {
+//		stmt = con.createStatement();
+//		String query = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit) "
+//				+ "VALUES (2011, 'Mohammad', 'Abu Alhijaa', 'Mohammad', '+962-7-9550-1284', 'Amman Street', NULL, 'Amman', NULL, '11008', 'Jordan', 1076, 75007.00);";
+//		stmt.executeUpdate(query);
+//	}
+	@Test(priority = 1,enabled = false)
 	public void MtTestToAddData() throws SQLException {
 		stmt = con.createStatement();
 		String query = "INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state, postalCode, country, salesRepEmployeeNumber, creditLimit) "
-				+ "VALUES (2011, 'Mohammad', 'Abu Alhijaa', 'Mohammad', '+962-7-9550-1284', 'Amman Street', NULL, 'Amman', NULL, '11008', 'Jordan', 1076, 75007.00);";
+				+ "VALUES (201100, 'DELL', 'LAPTOP', 'Mohammad', '+962-7-9550-1284', 'Amman Street', NULL, 'Amman', NULL, '11008', 'Jordan', 1076, 75007.00);";
 		stmt.executeUpdate(query);
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = true)
 	public void ReadData() throws SQLException {
 		stmt = con.createStatement();
-		String Query = "select * from customers where customerNumber=2011";
+		String Query = "select * from customers";
 		rs = stmt.executeQuery(Query);
 		while (rs.next()) {
 			firstname = rs.getString("customerName");
@@ -112,16 +117,18 @@ public class TestData {
 		PostalInput.sendKeys(customerPhone);
 		ConditionsAndTermsCheckbox.click();
 	}
-	@Test(priority = 4,enabled = true)
+	
+	@Test(priority = 4,enabled = false)
 	public void myTestToupdateData() throws SQLException {
 
 		stmt = con.createStatement();
 
-		String query = "UPDATE customers SET customerName = 'dana and raghad' WHERE customerNumber = 9991";
+		String query = "UPDATE customers SET customerName = 'DDDDDDDDDDDELLLLLLLLLL' WHERE customerNumber = 201100";
 
 		stmt.executeUpdate(query);
 	}
-	@Test(priority = 5,enabled = true)
+	
+	@Test(priority = 5,enabled = false)
 	public void myTestToDeleteData() throws SQLException {
 		
 		stmt = con.createStatement();

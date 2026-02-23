@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-23T13:30:30 EET" name="Default suite" finished-at="2026-02-23T13:30:44 EET" duration-ms="13720">
+  <suite started-at="2026-02-23T16:12:40 EET" name="Default suite" finished-at="2026-02-23T16:12:50 EET" duration-ms="9861">
     <groups>
     </groups>
-    <test started-at="2026-02-23T13:30:30 EET" name="Default test" finished-at="2026-02-23T13:30:44 EET" duration-ms="13720">
+    <test started-at="2026-02-23T16:12:40 EET" name="Default test" finished-at="2026-02-23T16:12:50 EET" duration-ms="9861">
       <class name="MyTestCase.TestData">
-        <test-method is-config="true" signature="MyBeforeTest()[pri:0, instance:MyTestCase.TestData@37052337]" started-at="2026-02-23T13:30:30 EET" name="MyBeforeTest" finished-at="2026-02-23T13:30:37 EET" duration-ms="6584" status="PASS">
+        <test-method is-config="true" signature="MyBeforeTest()[pri:0, instance:MyTestCase.TestData@4fcee388]" started-at="2026-02-23T16:12:40 EET" name="MyBeforeTest" finished-at="2026-02-23T16:12:43 EET" duration-ms="3130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyBeforeTest -->
-        <test-method signature="ReadData()[pri:2, instance:MyTestCase.TestData@37052337]" started-at="2026-02-23T13:30:37 EET" name="ReadData" finished-at="2026-02-23T13:30:37 EET" duration-ms="156" status="PASS">
+        <test-method signature="ReadData()[pri:2, instance:MyTestCase.TestData@4fcee388]" started-at="2026-02-23T16:12:43 EET" name="ReadData" finished-at="2026-02-23T16:12:43 EET" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadData -->
-        <test-method signature="SignupWithDataBase()[pri:3, instance:MyTestCase.TestData@37052337]" started-at="2026-02-23T13:30:37 EET" name="SignupWithDataBase" finished-at="2026-02-23T13:30:44 EET" duration-ms="6838" status="PASS">
+        <test-method signature="SignupWithDataBase()[pri:3, instance:MyTestCase.TestData@4fcee388]" started-at="2026-02-23T16:12:43 EET" name="SignupWithDataBase" finished-at="2026-02-23T16:12:50 EET" duration-ms="6513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignupWithDataBase -->
-        <test-method signature="myTestToupdateData()[pri:4, instance:MyTestCase.TestData@37052337]" started-at="2026-02-23T13:30:44 EET" name="myTestToupdateData" finished-at="2026-02-23T13:30:44 EET" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myTestToupdateData -->
-        <test-method signature="myTestToDeleteData()[pri:5, instance:MyTestCase.TestData@37052337]" started-at="2026-02-23T13:30:44 EET" name="myTestToDeleteData" finished-at="2026-02-23T13:30:44 EET" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myTestToDeleteData -->
       </class> <!-- MyTestCase.TestData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
