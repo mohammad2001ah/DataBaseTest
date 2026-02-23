@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 
 public class TestData {
 	Random rand = new Random();
+	
 	Connection con;
 	Statement stmt;
 	ResultSet rs;
@@ -26,6 +27,7 @@ public class TestData {
 	String lastname;
 	String customerID;
 	String customerPhone;
+	
 	int randomEmailNumber = rand.nextInt(5478);
 	int randomEmailNumber2 = rand.nextInt(978);
 
@@ -66,14 +68,13 @@ public class TestData {
 		}
 	}
 
-	@Test(priority = 3,enabled=false)
+	@Test(priority = 3,enabled=true)
 	public void SignupWithDataBase() throws InterruptedException {
 		String TheEmail = firstname + lastname + randomEmailNumber + randomEmailNumber2 + "@gmail.com";
 		System.out.println(TheEmail);
 		WebElement LoginAndSignUpButton = driver.findElement(By.linkText("Login or register"));
 		LoginAndSignUpButton.click();
 		// to press on countinue button
-
 		WebElement CountinueButtonBeforeSignupPage = driver.findElement(By.xpath("//button[@title='Continue']"));
 		CountinueButtonBeforeSignupPage.click();
 
@@ -125,7 +126,7 @@ public class TestData {
 		
 		stmt = con.createStatement();
 		
-		String query = "delete customers WHERE customerNumber = 9991";
+		String query = "delete from customers WHERE customerNumber = 9991";
 		
 		stmt.executeUpdate(query);
 	}
